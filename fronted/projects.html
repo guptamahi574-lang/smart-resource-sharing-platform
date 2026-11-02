@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body class="projects-page">
+
+    <header class="projects-header">
+        <a href="dashboard.html" class="projects-back">← Dashboard</a>
+        <div class="projects-brand">🌿 CampusConnect</div>
+        <a href="#share-project" class="projects-share-top">+ Share Project</a>
+    </header>
+
+    <main class="projects-main">
+
+        <section class="projects-hero">
+            <span class="projects-eyebrow">CREATE • COLLABORATE • GROW</span>
+            <h1>Discover Student Projects</h1>
+            <p>Explore what your campus is building, find inspiration, and connect with students who share your interests.</p>
+            <a href="#project-list" class="projects-explore-btn">Explore Projects ↓</a>
+        </section>
+
+        <section class="projects-toolbar" id="project-list">
+            <div>
+                <h2>Campus Project Hub</h2>
+                <p>Ideas, innovation and teamwork in one place.</p>
+            </div>
+
+            <input
+                type="search"
+                id="projectSearch"
+                placeholder="Search projects or technologies..."
+                aria-label="Search projects"
+            >
+        </section>
+
+        <div class="projects-filters">
+            <button type="button" class="project-filter active" data-category="All">All Projects</button>
+            <button type="button" class="project-filter" data-category="Web Development">Web Development</button>
+            <button type="button" class="project-filter" data-category="AI/ML">AI / ML</button>
+            <button type="button" class="project-filter" data-category="App Development">App Development</button>
+            <button type="button" class="project-filter" data-category="Other">Other</button>
+        </div>
+
+        <section class="projects-grid">
+
+            <article class="project-card" data-category="Web Development">
+                <div class="project-card-top">
+                    <span class="project-icon">🌐</span>
+                    <span class="project-status">Sample Project</span>
+                </div>
+                <h3>CampusConnect</h3>
+                <p>A student platform for sharing resources, borrowing items and learning from seniors.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-meta">
+                    <span>👥 Student Team</span>
+                    <span>Web Development</span>
+                </div>
+                <button type="button" class="project-view-btn">Project Details ↗</button>
+            </article>
+
+            <article class="project-card" data-category="AI/ML">
+                <div class="project-card-top">
+                    <span class="project-icon">🤖</span>
+                    <span class="project-status">Sample Project</span>
+                </div>
+                <h3>Smart Study Assistant</h3>
+                <p>A concept for helping students organize study material and plan revision sessions.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>AI/ML</span><span>Automation</span>
+                </div>
+                <div class="project-meta">
+                    <span>👥 Student Team</span>
+                    <span>AI / ML</span>
+                </div>
+                <button type="button" class="project-view-btn">Project Details ↗</button>
+            </article>
+
+            <article class="project-card" data-category="App Development">
+                <div class="project-card-top">
+                    <span class="project-icon">📱</span>
+                    <span class="project-status">Sample Project</span>
+                </div>
+                <h3>Student Habit Tracker</h3>
+                <p>A concept app for tracking learning goals, daily habits and personal progress.</p>
+                <div class="project-tags">
+                    <span>App Design</span><span>UI/UX</span><span>Database</span>
+                </div>
+                <div class="project-meta">
+                    <span>👥 Student Team</span>
+                    <span>App Development</span>
+                </div>
+                <button type="button" class="project-view-btn">Project Details ↗</button>
+            </article>
+
+            <article class="project-card" data-category="Web Development">
+                <div class="project-card-top">
+                    <span class="project-icon">📚</span>
+                    <span class="project-status">Sample Project</span>
+                </div>
+                <h3>Digital Notes Library</h3>
+                <p>A concept website for organizing subject notes and study resources in one place.</p>
+                <div class="project-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-meta">
+                    <span>👥 Student Team</span>
+                    <span>Web Development</span>
+                </div>
+                <button type="button" class="project-view-btn">Project Details ↗</button>
+            </article>
+
+            <article class="project-card" data-category="AI/ML">
+                <div class="project-card-top">
+                    <span class="project-icon">🌱</span>
+                    <span class="project-status">Sample Project</span>
+                </div>
+                <h3>Plant Care Assistant</h3>
+                <p>A concept project exploring reminders and smart suggestions for plant care.</p>
+                <div class="project-tags">
+                    <span>Python</span><span>Machine Learning</span>
+                </div>
+                <div class="project-meta">
+                    <span>👥 Student Team</span>
+                    <span>AI / ML</span>
+                </div>
+                <button type="button" class="project-view-btn">Project Details ↗</button>
+            </article>
+
+            <article class="project-card" data-category="Other">
+                <div class="project-card-top">
+                    <span class="project-icon">💡</span>
+                    <span class="project-status">Sample Project</span>
+                </div>
+                <h3>Smart Energy Monitor</h3>
+                <p>A concept for understanding electricity usage and encouraging energy conservation.</p>
+                <div class="project-tags">
+                    <span>IoT</span><span>Electronics</span><span>Data</span>
+                </div>
+                <div class="project-meta">
+                    <span>👥 Student Team</span>
+                    <span>Other</span>
+                </div>
+                <button type="button" class="project-view-btn">Project Details ↗</button>
+            </article>
+
+        </section> 
+
+        <section class="projects-empty" id="projectsEmpty" hidden>
+            <span>🔎</span>
+            <h3>No projects found</h3>
+            <p>Try another search or select a different category.</p>
+        </section>
+
+        <section class="projects-cta" id="share-project">
+            <div>
+                <span class="projects-eyebrow">YOUR IDEA MATTERS</span>
+                <h2>Building something interesting?</h2>
+                <p>Share your project with fellow students and discover potential collaborators.</p>
+            </div>
+            <button type="button" id="shareProjectBtn">+ Share Your Project</button>
+        </section>
+
+        <footer class="projects-footer">
+            <a href="dashboard.html">← Back to Dashboard</a>
+            <p>CampusConnect · Learn together. Build together.</p>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>

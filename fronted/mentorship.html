@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mentorship.css">
+</head>
+
+<body class="mentorship-page">
+
+    <header class="mentor-header">
+        <a href="dashboard.html" class="mentor-back">← Dashboard</a>
+        <div>
+            <p class="mentor-eyebrow">CAMPUSCONNECT COMMUNITY</p>
+            <h1>Senior Mentorship</h1>
+            <p>Learn from experience. Grow with guidance.</p>
+        </div>
+        <a href="dashboard.html" class="mentor-home">Home</a>
+    </header>
+
+    <main class="mentor-main">
+
+        <section class="mentor-welcome">
+            <span class="mentor-label">YOUR GROWTH, OUR COMMUNITY</span>
+            <h2>Find your senior mentor.</h2>
+            <p>
+                Connect with experienced students for academic guidance,
+                coding advice, internships and college life.
+            </p>
+        </section>
+
+        <section class="mentor-search-section">
+            <input
+                type="search"
+                id="mentorSearch"
+                placeholder="Search by name, branch or skill..."
+                aria-label="Search mentors"
+            >
+
+            <select id="mentorSkill" aria-label="Filter by expertise">
+                <option value="all">All Expertise</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="DSA">DSA</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="Career Guidance">Career Guidance</option>
+            </select>
+        </section>
+
+        <section class="mentor-section">
+            <div class="mentor-section-heading">
+                <div>
+                    <span class="mentor-label">LEARN TOGETHER</span>
+                    <h2>Meet Your Mentors</h2>
+                </div>
+                <span class="mentor-count">6 Senior Mentors</span>
+            </div>
+
+            <div class="mentor-grid">
+
+                <article class="mentor-card">
+                    <div class="mentor-card-top">
+                        <div class="mentor-avatar">A</div>
+                        <span class="mentor-year">4th Year</span>
+                    </div>
+                    <h3>Aditya Sharma</h3>
+                    <p class="mentor-branch">CSE · 4th Year</p>
+                    <p class="mentor-bio">Helping juniors build strong coding fundamentals.</p>
+                    <div class="mentor-tags">
+                        <span>Web Development</span>
+                        <span>DSA</span>
+                    </div>
+                    <button class="mentor-connect" type="button">Connect</button>
+                </article>
+
+                <article class="mentor-card">
+                    <div class="mentor-card-top">
+                        <div class="mentor-avatar sage">S</div>
+                        <span class="mentor-year">4th Year</span>
+                    </div>
+                    <h3>Sneha Verma</h3>
+                    <p class="mentor-branch">CST · 4th Year</p>
+                    <p class="mentor-bio">Sharing practical tips for projects and internships.</p>
+                    <div class="mentor-tags">
+                        <span>Data Analytics</span>
+                        <span>Career Guidance</span>
+                    </div>
+                    <button class="mentor-connect" type="button">Connect</button>
+                </article>
+
+                <article class="mentor-card">
+                    <div class="mentor-card-top">
+                        <div class="mentor-avatar gold">R</div>
+                        <span class="mentor-year">3rd Year</span>
+                    </div>
+                    <h3>Rohan Mehta</h3>
+                    <p class="mentor-branch">CSD · 3rd Year</p>
+                    <p class="mentor-bio">Guidance for problem-solving and coding practice.</p>
+                    <div class="mentor-tags">
+                        <span>DSA</span>
+                        <span>Career Guidance</span>
+                    </div>
+                    <button class="mentor-connect" type="button">Connect</button>
+                </article>
+
+                <article class="mentor-card">
+                    <div class="mentor-card-top">
+                        <div class="mentor-avatar sage">P</div>
+                        <span class="mentor-year">4th Year</span>
+                    </div>
+                    <h3>Priya Singh</h3>
+                    <p class="mentor-branch">CST · 4th Year</p>
+                    <p class="mentor-bio">Explore data, analytics and project development.</p>
+                    <div class="mentor-tags">
+                        <span>AI/ML</span>
+                        <span>Data Analytics</span>
+                    </div>
+                    <button class="mentor-connect" type="button">Connect</button>
+                </article>
+
+                <article class="mentor-card">
+                    <div class="mentor-card-top">
+                        <div class="mentor-avatar gold">K</div>
+                        <span class="mentor-year">3rd Year</span>
+                    </div>
+                    <h3>Karan Patel</h3>
+                    <p class="mentor-branch">CSE · 3rd Year</p>
+                    <p class="mentor-bio">Learn to create websites and work on real projects.</p>
+                    <div class="mentor-tags">
+                        <span>Web Development</span>
+                        <span>DSA</span>
+                    </div>
+                    <button class="mentor-connect" type="button">Connect</button>
+                </article>
+
+                <article class="mentor-card">
+                    <div class="mentor-card-top">
+                        <div class="mentor-avatar">N</div>
+                        <span class="mentor-year">4th Year</span>
+                    </div>
+                    <h3>Neha Jain</h3>
+                    <p class="mentor-branch">CST · 4th Year</p>
+                    <p class="mentor-bio">Get guidance on AI tools and choosing your career path.</p>
+                    <div class="mentor-tags">
+                        <span>AI/ML</span>
+                        <span>Career Guidance</span>
+                    </div>
+                    <button class="mentor-connect" type="button">Connect</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="mentor-note">
+            <span>✦</span>
+            <div>
+                <h3>Everyone starts somewhere.</h3>
+                <p>Ask questions, share your goals and learn one step at a time.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mentor-footer">
+        <p>CampusConnect · Learn, Share & Grow Together</p>
+    </footer>
+ 
+<script src="mentorship.js"></script>
+
+</body>
+</html>

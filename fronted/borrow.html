@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Borrow & Lend | CampusConnect</title>
+
+    <link rel="stylesheet" href="borrow.css">
+</head>
+
+<body class="borrow-page">
+
+    <!-- HEADER -->
+
+    <header class="borrow-header">
+
+        <div class="borrow-header-left">
+
+            <a href="dashboard.html" class="back-button">
+                ←
+            </a>
+
+            <div>
+                <h1>Borrow & Lend</h1>
+                <p>Borrow useful items or lend something to your fellow students.</p>
+            </div>
+
+        </div>
+
+       <button type="button" class="lend-item-btn" id="lendItemBtn">
+    + Lend an Item
+</button>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="borrow-main">
+
+        <!-- SEARCH -->
+
+        <div class="borrow-search">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                placeholder="Search calculators, books, lab items..."
+            >
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="borrow-filters">
+
+            <button class="borrow-filter active">
+                All Items
+            </button>
+
+            <button class="borrow-filter">
+                📚 Books
+            </button>
+
+            <button class="borrow-filter">
+                🧮 Calculators
+            </button>
+
+            <button class="borrow-filter">
+                💻 Electronics
+            </button>
+
+            <button class="borrow-filter">
+                🧪 Lab Items
+            </button>
+
+        </div>
+
+
+        <!-- SECTION HEADING -->
+
+        <div class="borrow-section-heading">
+
+            <div>
+                <h2>Available Items</h2>
+                <p>Items currently available from students.</p>
+            </div>
+
+            <select class="sort-select">
+
+                <option>Recently Added</option>
+                <option>Nearest First</option>
+                <option>Category</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ITEMS GRID -->
+
+        <div class="borrow-grid">
+
+
+            <!-- ITEM 1 -->
+
+            <div class="borrow-card">
+
+                <div class="borrow-card-top">
+
+                    <div class="borrow-item-icon">
+                        🧮
+                    </div>
+
+                    <span class="available-badge">
+                        Available
+                    </span>
+
+                </div>
+
+                <h3>Scientific Calculator</h3>
+
+                <p class="borrow-description">
+                    Casio scientific calculator available for
+                    temporary academic use.
+                </p>
+
+                <div class="borrow-meta">
+
+                    <span>👤 Rohan</span>
+
+                    <span>📍 CST • 3rd Year</span>
+
+                </div>
+
+                <div class="borrow-bottom">
+
+                    <span class="borrow-time">
+                        Added today
+                    </span>
+
+                    <button class="borrow-btn">
+                        Request
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ITEM 2 -->
+
+            <div class="borrow-card">
+
+                <div class="borrow-card-top">
+
+                    <div class="borrow-item-icon">
+                        📚
+                    </div>
+
+                    <span class="available-badge">
+                        Available
+                    </span>
+
+                </div>
+
+                <h3>Data Structures Book</h3>
+
+                <p class="borrow-description">
+                    Data Structures and Algorithms reference book
+                    for semester preparation.
+                </p>
+
+                <div class="borrow-meta">
+
+                    <span>👤 Ananya</span>
+
+                    <span>📍 CSE • 4th Year</span>
+
+                </div>
+
+                <div class="borrow-bottom">
+
+                    <span class="borrow-time">
+                        Added yesterday
+                    </span>
+
+                    <button class="borrow-btn">
+                        Request
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ITEM 3 -->
+
+            <div class="borrow-card">
+
+                <div class="borrow-card-top">
+
+                    <div class="borrow-item-icon">
+                        💻
+                    </div>
+
+                    <span class="available-badge">
+                        Available
+                    </span>
+
+                </div>
+
+                <h3>USB Keyboard</h3>
+
+                <p class="borrow-description">
+                    USB keyboard available for project and
+                    practical work.
+                </p>
+
+                <div class="borrow-meta">
+
+                    <span>👤 Arjun</span>
+
+                    <span>📍 CSD • 2nd Year</span>
+
+                </div>
+
+                <div class="borrow-bottom">
+
+                    <span class="borrow-time">
+                        Added 2 days ago
+                    </span>
+
+                    <button class="borrow-btn">
+                        Request
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ITEM 4 -->
+
+            <div class="borrow-card">
+
+                <div class="borrow-card-top">
+
+                    <div class="borrow-item-icon">
+                        🧪
+                    </div>
+
+                    <span class="available-badge">
+                        Available
+                    </span>
+
+                </div>
+
+                <h3>Arduino Uno</h3>
+
+                <p class="borrow-description">
+                    Arduino board available for mini projects
+                    and practical experimentation.
+                </p>
+
+                <div class="borrow-meta">
+
+                    <span>👤 Karan</span>
+
+                    <span>📍 CST • 3rd Year</span>
+
+                </div>
+
+                <div class="borrow-bottom">
+
+                    <span class="borrow-time">
+                        Added 3 days ago
+                    </span>
+
+                    <button class="borrow-btn">
+                        Request
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ITEM 5 -->
+
+            <div class="borrow-card">
+
+                <div class="borrow-card-top">
+
+                    <div class="borrow-item-icon">
+                        📖
+                    </div>
+
+                    <span class="available-badge">
+                        Available
+                    </span>
+
+                </div>
+
+                <h3>Python Programming Book</h3>
+
+                <p class="borrow-description">
+                    Beginner-friendly Python programming book
+                    for learning and practice.
+                </p>
+
+                <div class="borrow-meta">
+
+                    <span>👤 Priya</span>
+
+                    <span>📍 CST • 3rd Year</span>
+
+                </div>
+
+                <div class="borrow-bottom">
+
+                    <span class="borrow-time">
+                        Added 4 days ago
+                    </span>
+
+                    <button class="borrow-btn">
+                        Request
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ITEM 6 -->
+
+            <div class="borrow-card">
+
+                <div class="borrow-card-top">
+
+                    <div class="borrow-item-icon">
+                        🔌
+                    </div>
+
+                    <span class="available-badge">
+                        Available
+                    </span>
+
+                </div>
+
+                <h3>Extension Board</h3>
+
+                <p class="borrow-description">
+                    Extension board available for temporary
+                    college project or event use.
+                </p>
+
+                <div class="borrow-meta">
+
+                    <span>👤 Rahul</span>
+
+                    <span>📍 EE • 4th Year</span>
+
+                </div>
+
+                <div class="borrow-bottom">
+
+                    <span class="borrow-time">
+                        Added 5 days ago
+                    </span>
+
+                    <button class="borrow-btn">
+                        Request
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+     <!-- LEND ITEM POPUP -->
+<div class="lend-modal" id="lendModal">
+    <div class="lend-modal-content">
+        <button type="button" class="lend-close-btn" id="closeLendModal">&times;</button>
+
+        <p class="lend-eyebrow">CAMPUSCONNECT COMMUNITY</p>
+        <h2>Lend an Item</h2>
+        <p class="lend-subtitle">Share something useful with your fellow students.</p>
+
+        <form id="lendItemForm">
+            <label for="lendItemName">Item Name</label>
+            <input type="text" id="lendItemName" placeholder="e.g. Scientific Calculator" required>
+
+            <label for="lendItemCategory">Category</label>
+            <select id="lendItemCategory" required>
+                <option value="">Select category</option>
+                <option value="Books">Books</option>
+                <option value="Calculators">Calculators</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Lab Items">Lab Items</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="lendItemDescription">Description</label>
+            <textarea id="lendItemDescription" rows="3" placeholder="Describe your item..." required></textarea>
+
+            <label for="lendOwnerName">Your Name</label>
+            <input type="text" id="lendOwnerName" placeholder="Enter your name" required>
+
+            <div class="lend-form-row">
+                <div>
+                    <label for="lendOwnerBranch">Branch</label>
+                    <input type="text" id="lendOwnerBranch" placeholder="e.g. CST" required>
+                </div>
+
+                <div>
+                    <label for="lendOwnerYear">Year</label>
+                    <select id="lendOwnerYear" required>
+                        <option value="">Select year</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="lendAvailability">Availability</label>
+            <select id="lendAvailability" required>
+                <option value="Available">Available</option>
+                <option value="Temporarily Unavailable">Temporarily Unavailable</option>
+            </select>
+
+            <button type="submit" class="lend-submit-btn">Submit Item →</button>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script src="borrow.js"></script>
+
+
+</body>
+
+</html>

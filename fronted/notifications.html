@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+
+<body class="notifications-page">
+
+    <!-- Header -->
+    <header class="notifications-header">
+        <a href="dashboard.html" class="notification-back">← Dashboard</a>
+
+        <a href="dashboard.html" class="notification-brand">
+            🌿 CampusConnect
+        </a>
+
+        <a href="my-profile.html" class="notification-profile">
+            My Profile ↗
+        </a>
+    </header>
+
+    <main class="notifications-main">
+
+        <!-- Page Heading -->
+        <section class="notification-hero">
+            <span class="notification-eyebrow">STAY IN THE LOOP</span>
+            <h1>Your Notifications</h1>
+            <p>
+                Keep up with resource requests, mentorship updates and
+                everything happening in your campus community.
+            </p>
+
+            <div class="notification-summary">
+                <div class="notification-summary-item">
+                    <span class="summary-icon">🔔</span>
+                    <div>
+                        <strong id="totalNotifications">6</strong>
+                        <span>Total Notifications</span>
+                    </div>
+                </div>
+
+                <div class="notification-summary-item">
+                    <span class="summary-icon">✦</span>
+                    <div>
+                        <strong id="unreadNotifications">4</strong>
+                        <span>Unread Notifications</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notification Controls -->
+        <section class="notification-toolbar">
+
+            <div class="notification-toolbar-heading">
+                <h2>Recent Activity</h2>
+                <p>Important updates from your CampusConnect community.</p>
+            </div>
+
+            <button
+                type="button"
+                id="markAllReadBtn"
+                class="mark-all-read-btn"
+            >
+                ✓ Mark All as Read
+            </button>
+
+        </section>
+
+        <!-- Filters -->
+        <nav class="notification-filters" aria-label="Notification filters">
+            <button
+                type="button"
+                class="notification-filter active"
+                data-filter="all"
+            >
+                All
+            </button>
+
+            <button
+                type="button"
+                class="notification-filter"
+                data-filter="unread"
+            >
+                Unread
+            </button>
+
+            <button
+                type="button"
+                class="notification-filter"
+                data-filter="resources"
+            >
+                Resources
+            </button>
+
+            <button
+                type="button"
+                class="notification-filter"
+                data-filter="mentorship"
+            >
+                Mentorship
+            </button>
+
+            <button
+                type="button"
+                class="notification-filter"
+                data-filter="community"
+            >
+                Community
+            </button>
+        </nav>
+
+        <!-- Today -->
+        <section class="notification-group">
+            <div class="notification-group-heading">
+                <h3>Recent</h3>
+                <span>Latest activity</span>
+            </div>
+
+            <article
+                class="notification-card unread"
+                data-category="resources"
+                data-read="false"
+            >
+                <div class="notification-icon resource-icon">📚</div>
+
+                <div class="notification-content">
+                    <div class="notification-title-row">
+                        <h4>New Study Resource Added</h4>
+                        <span class="unread-dot"></span>
+                    </div>
+
+                    <p>
+                        A new study resource has been added to the Resource Hub.
+                        Explore the available notes and learning material.
+                    </p>
+
+                    <div class="notification-meta">
+                        <span>Resource Hub</span>
+                        <span>•</span>
+                        <span>Recently</span>
+                    </div>
+
+                    <a href="resources.html" class="notification-action">
+                        Explore Resources →
+                    </a>
+                </div>
+
+                <span class="notification-badge">New</span>
+            </article>
+
+            <article
+                class="notification-card unread"
+                data-category="mentorship"
+                data-read="false"
+            >
+                <div class="notification-icon mentorship-icon">🤝</div>
+
+                <div class="notification-content">
+                    <div class="notification-title-row">
+                        <h4>Explore Senior Mentorship</h4>
+                        <span class="unread-dot"></span>
+                    </div>
+
+                    <p>
+                        Looking for guidance with coding, projects or career
+                        planning? Discover senior mentors in your community.
+                    </p>
+
+                    <div class="notification-meta">
+                        <span>Mentorship</span>
+                        <span>•</span>
+                        <span>Recently</span>
+                    </div>
+
+                    <a href="mentorship.html" class="notification-action">
+                        Find a Mentor →
+                    </a>
+                </div>
+
+                <span class="notification-badge">New</span>
+            </article>
+
+            <article
+                class="notification-card unread"
+                data-category="community"
+                data-read="false"
+            >
+                <div class="notification-icon community-icon">🌿</div>
+
+                <div class="notification-content">
+                    <div class="notification-title-row">
+                        <h4>Discover Campus Clubs</h4>
+                        <span class="unread-dot"></span>
+                    </div>
+
+                    <p>
+                        Explore student clubs, communities and activities
+                        that match your interests.
+                    </p>
+
+                    <div class="notification-meta">
+                        <span>Campus Community</span>
+                        <span>•</span>
+                        <span>Recently</span>
+                    </div>
+
+                    <a href="clubs.html" class="notification-action">
+                        Explore Clubs →
+                    </a>
+                </div>
+
+                <span class="notification-badge">New</span>
+            </article>
+        </section>
+
+        <!-- Earlier Activity -->
+        <section class="notification-group">
+
+            <div class="notification-group-heading">
+                <h3>Earlier</h3>
+                <span>More updates</span>
+            </div>
+
+            <article
+                class="notification-card unread"
+                data-category="resources"
+                data-read="false"
+            >
+                <div class="notification-icon borrow-icon">📦</div>
+
+                <div class="notification-content">
+                    <div class="notification-title-row">
+                        <h4>Borrow & Lend Hub</h4>
+                        <span class="unread-dot"></span>
+                    </div>
+
+                    <p>
+                        Need a calculator, book or lab item?
+                        Check what fellow students have listed.
+                    </p>
+
+                    <div class="notification-meta">
+                        <span>Borrow & Lend</span>
+                        <span>•</span>
+                        <span>Earlier</span>
+                    </div>
+
+                    <a href="borrow.html" class="notification-action">
+                        Browse Items →
+                    </a>
+                </div>
+            </article>
+
+            <article
+                class="notification-card"
+                data-category="community"
+                data-read="true"
+            >
+                <div class="notification-icon project-icon">💻</div>
+
+                <div class="notification-content">
+                    <div class="notification-title-row">
+                        <h4>Explore Student Projects</h4>
+                    </div>
+
+                    <p>
+                        Discover student ideas and find inspiration
+                        for your next project.
+                    </p>
+
+                    <div class="notification-meta">
+                        <span>Projects</span>
+                        <span>•</span>
+                        <span>Earlier</span>
+                    </div>
+
+                    <a href="projects.html" class="notification-action">
+                        Explore Projects →
+                    </a>
+                </div>
+            </article>
+
+            <article
+                class="notification-card"
+                data-category="community"
+                data-read="true"
+            >
+                <div class="notification-icon experience-icon">💌</div>
+
+                <div class="notification-content">
+                    <div class="notification-title-row">
+                        <h4>Learn From Student Experiences</h4>
+                    </div>
+
+                    <p>
+                        Read about college life, study strategies and
+                        experiences shared by fellow students.
+                    </p>
+
+                    <div class="notification-meta">
+                        <span>Experience Hub</span>
+                        <span>•</span>
+                        <span>Earlier</span>
+                    </div>
+
+                    <a href="experience.html" class="notification-action">
+                        Read Experiences →
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Empty State -->
+        <section class="notification-empty" id="notificationEmpty" hidden>
+            <div class="empty-notification-icon">🔔</div>
+            <h3>No notifications found</h3>
+            <p>Try another filter to explore your notifications.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="notifications-footer">
+            <a href="dashboard.html">← Back to Dashboard</a>
+            <p>CampusConnect · Learn together. Build together.</p>
+        </footer>
+
+    </main>
+ 
+<script src="profile-notifications.js"></script>
+
+</body>
+</html>

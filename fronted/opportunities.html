@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Opportunities | CampusConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="opportunities.css">
+</head>
+
+<body class="opportunities-page">
+
+    <!-- Header -->
+    <header class="opportunities-header">
+        <a href="dashboard.html" class="opportunities-back">
+            ← Dashboard
+        </a>
+
+        <h2>CampusConnect</h2>
+
+        <span class="opportunities-label">Opportunities</span>
+    </header>
+
+    <main class="opportunities-main">
+
+        <!-- Hero Section -->
+        <section class="opportunities-hero">
+            <span class="opportunities-eyebrow">
+                EXPLORE • LEARN • GROW
+            </span>
+
+            <h1>Your next opportunity starts here.</h1>
+
+            <p>
+                Discover internships, hackathons, scholarships and
+                competitions to build your skills and move closer
+                to your career goals.
+            </p>
+
+            <a href="#opportunity-list" class="opportunities-hero-btn">
+                Explore Opportunities →
+            </a>
+        </section>
+
+        <!-- Search Section -->
+        <section class="opportunities-search-section">
+            <div>
+                <h2>Find your next opportunity</h2>
+                <p>Explore opportunities that match your interests.</p>
+            </div>
+
+            <div class="opportunities-search">
+                <input
+                    type="search"
+                    id="opportunitySearch"
+                    placeholder="Search internships, hackathons..."
+                    aria-label="Search opportunities"
+                >
+
+                <button type="button" id="opportunitySearchBtn">
+                    Search
+                </button>
+            </div>
+        </section>
+
+        <!-- Category Filters -->
+        <section class="opportunities-categories">
+            <button type="button" class="opportunity-filter active">
+                All
+            </button>
+
+            <button type="button" class="opportunity-filter">
+                Internships
+            </button>
+
+            <button type="button" class="opportunity-filter">
+                Hackathons
+            </button>
+
+            <button type="button" class="opportunity-filter">
+                Scholarships
+            </button>
+
+            <button type="button" class="opportunity-filter">
+                Competitions
+            </button>
+        </section>
+
+        <!-- Opportunity Listing -->
+        <section class="opportunities-list-section" id="opportunity-list">
+
+            <div class="opportunities-section-heading">
+                <div>
+                    <h2>Explore opportunities</h2>
+                    <p>Find something new to work towards.</p>
+                </div>
+
+                <select id="opportunitySort" aria-label="Sort opportunities">
+                    <option value="latest">Latest first</option>
+                    <option value="deadline">Closing soon</option>
+                </select>
+            </div>
+
+            <div class="opportunities-grid">
+
+                <!-- Opportunity 1 -->
+                <article class="opportunity-card">
+                    <div class="opportunity-card-top">
+                        <span class="opportunity-category">
+                            Internship
+                        </span>
+                        <span class="opportunity-symbol">01</span>
+                    </div>
+
+                    <h3>Software Development Internship</h3>
+
+                    <p class="opportunity-organization">
+                        Example Organization
+                    </p>
+
+                    <p class="opportunity-description">
+                        An opportunity to learn programming,
+                        collaborate with a team and work on
+                        software development tasks.
+                    </p>
+
+                    <div class="opportunity-details">
+                        <span>◷ Flexible Duration</span>
+                        <span>⌖ Remote / On-site</span>
+                    </div>
+
+                    <div class="opportunity-deadline">
+                        <span>Application deadline</span>
+                        <strong>To be announced</strong>
+                    </div>
+
+                    <button type="button" class="opportunity-view-btn">
+                        View Opportunity →
+                    </button>
+                </article>
+
+                <!-- Opportunity 2 -->
+                <article class="opportunity-card">
+                    <div class="opportunity-card-top">
+                        <span class="opportunity-category">
+                            Hackathon
+                        </span>
+                        <span class="opportunity-symbol">02</span>
+                    </div>
+
+                    <h3>Student Innovation Challenge</h3>
+
+                    <p class="opportunity-organization">
+                        Example Organizer
+                    </p>
+
+                    <p class="opportunity-description">
+                        Collaborate with other students, develop
+                        creative solutions and present your
+                        project idea.
+                    </p>
+
+                    <div class="opportunity-details">
+                        <span>◷ Event Duration: TBA</span>
+                        <span>⌖ Online / Offline</span>
+                    </div>
+
+                    <div class="opportunity-deadline">
+                        <span>Registration deadline</span>
+                        <strong>To be announced</strong>
+                    </div>
+
+                    <button type="button" class="opportunity-view-btn">
+                        View Opportunity →
+                    </button>
+                </article>
+
+                <!-- Opportunity 3 -->
+                <article class="opportunity-card">
+                    <div class="opportunity-card-top">
+                        <span class="opportunity-category">
+                            Scholarship
+                        </span>
+                        <span class="opportunity-symbol">03</span>
+                    </div>
+
+                    <h3>Student Scholarship Programme</h3>
+
+                    <p class="opportunity-organization">
+                        Example Scholarship Provider
+                    </p>
+
+                    <p class="opportunity-description">
+                        Explore financial assistance programmes
+                        and check their eligibility requirements
+                        before applying.
+                    </p>
+
+                    <div class="opportunity-details">
+                        <span>◷ Eligibility Based</span>
+                        <span>⌖ Application Online</span>
+                    </div>
+
+                    <div class="opportunity-deadline">
+                        <span>Application deadline</span>
+                        <strong>To be announced</strong>
+                    </div>
+
+                    <button type="button" class="opportunity-view-btn">
+                        View Opportunity →
+                    </button>
+                </article>
+
+                <!-- Opportunity 4 -->
+                <article class="opportunity-card">
+                    <div class="opportunity-card-top">
+                        <span class="opportunity-category">
+                            Competition
+                        </span>
+                        <span class="opportunity-symbol">04</span>
+                    </div>
+
+                    <h3>Creative Project Competition</h3>
+
+                    <p class="opportunity-organization">
+                        Example Organizer
+                    </p>
+
+                    <p class="opportunity-description">
+                        Showcase your ideas, demonstrate your
+                        technical skills and learn through
+                        friendly competition.
+                    </p>
+
+                    <div class="opportunity-details">
+                        <span>◷ Schedule: TBA</span>
+                        <span>⌖ Student Participation</span>
+                    </div>
+
+                    <div class="opportunity-deadline">
+                        <span>Submission deadline</span>
+                        <strong>To be announced</strong>
+                    </div>
+
+                    <button type="button" class="opportunity-view-btn">
+                        View Opportunity →
+                    </button>
+                </article>
+
+                <!-- Opportunity 5 -->
+                <article class="opportunity-card">
+                    <div class="opportunity-card-top">
+                        <span class="opportunity-category">
+                            Internship
+                        </span>
+                        <span class="opportunity-symbol">05</span>
+                    </div>
+
+                    <h3>Data Analytics Learning Internship</h3>
+
+                    <p class="opportunity-organization">
+                        Example Organization
+                    </p>
+
+                    <p class="opportunity-description">
+                        Explore data analysis, learn to interpret
+                        datasets and practise presenting insights
+                        through projects.
+                    </p>
+
+                    <div class="opportunity-details">
+                        <span>◷ Duration: TBA</span>
+                        <span>⌖ Remote / On-site</span>
+                    </div>
+
+                    <div class="opportunity-deadline">
+                        <span>Application deadline</span>
+                        <strong>To be announced</strong>
+                    </div>
+
+                    <button type="button" class="opportunity-view-btn">
+                        View Opportunity →
+                    </button>
+                </article>
+
+                <!-- Opportunity 6 -->
+                <article class="opportunity-card">
+                    <div class="opportunity-card-top">
+                        <span class="opportunity-category">
+                            Hackathon
+                        </span>
+                        <span class="opportunity-symbol">06</span>
+                    </div>
+
+                    <h3>Web Development Challenge</h3>
+
+                    <p class="opportunity-organization">
+                        Example Organizer
+                    </p>
+
+                    <p class="opportunity-description">
+                        Build a website or prototype that solves
+                        a real-world problem and share your
+                        work with other developers.
+                    </p>
+
+                    <div class="opportunity-details">
+                        <span>◷ Schedule: TBA</span>
+                        <span>⌖ Online / Offline</span>
+                    </div>
+
+                    <div class="opportunity-deadline">
+                        <span>Registration deadline</span>
+                        <strong>To be announced</strong>
+                    </div>
+
+                    <button type="button" class="opportunity-view-btn">
+                        View Opportunity →
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Helpful Note -->
+        <section class="opportunities-note">
+            <h2>Stay curious. Keep exploring.</h2>
+
+            <p>
+                Check eligibility, official deadlines and application
+                details before applying. The sample listings above
+                are placeholders, not verified live opportunities.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="opportunities-footer">
+        CampusConnect · Discover opportunities. Build your future.
+    </footer>
+<script src="opportunities.js"></script>
+</body>
+</html>

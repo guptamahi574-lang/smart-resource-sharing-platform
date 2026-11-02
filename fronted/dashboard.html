@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | CampusConnect</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">C</span>
+                <span>CampusConnect</span>
+            </a>
+        </div>
+
+
+        <!-- User Profile -->
+
+        <div class="sidebar-profile">
+<div class="profile-avatar" id="sidebarAvatar">M</div>
+
+            <div class="profile-info">
+    <h3 id="sidebarName">Student Name</h3>
+    <p id="sidebarDetails">Branch • Year</p>
+</div>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN</p>
+
+            <a href="#" class="nav-item active">
+                <span>🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="resources.html" class="nav-item">
+                <span>📚</span>
+                <span>Resources</span>
+            </a>
+
+            <a href="borrow.html" class="nav-item">
+                <span>🔄</span>
+                <span>Borrow & Lend</span>
+            </a>
+
+            <a href="mentorship.html" class="nav-item">
+                <span>🤝</span>
+                <span>Mentorship</span>
+            </a>
+
+
+            <p class="nav-title">DISCOVER</p>
+
+            <a href="experience.html" class="nav-item">
+                <span>💼</span>
+                <span>Experience Hub</span>
+            </a>
+
+            <a href="clubs.html" class="nav-item">
+                <span>🏆</span>
+                <span>Clubs & Societies</span>
+            </a>
+
+            <a href="opportunities.html" class="nav-item">
+                <span>🚀</span>
+                <span>Opportunities</span>
+            </a>
+
+            <a href="projects.html" class="nav-item">
+                <span>💻</span>
+                <span>Projects</span>
+            </a>
+
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="notifications.html" class="nav-item">
+                <span>🔔</span>
+                <span>Notifications</span>
+            </a>
+
+            <a href="my-profile.html" class="nav-item">
+                <span>👤</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="index.html" class="nav-item logout">
+                <span>↪</span>
+                <span>Logout</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="dashboard-main">
+
+        <!-- Top Header -->
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="welcome-small">
+                    Welcome back 👋
+                </p>
+
+                <h1 id="welcomeName">Hello!</h1>
+
+                <p class="header-subtitle">
+                    Here's what's happening around your campus.
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="notification-btn">
+                    🔔
+                    <span class="notification-dot"></span>
+                </button>
+
+
+                <div class="header-profile">
+
+                    <div class="header-avatar" id="headerAvatar">M</div>
+
+                   <div>
+    <strong id="headerName">Student Name</strong>
+    <span id="headerDetails">Branch • Year</span>
+</div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= QUICK STATS ================= -->
+
+        <section class="stats-grid">
+
+            <div class="dashboard-stat">
+
+                <div class="stat-icon">
+                    📚
+                </div>
+
+                <div>
+                    <h2>12</h2>
+                    <p>Resources Shared</p>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat">
+
+                <div class="stat-icon">
+                    🤝
+                </div>
+
+                <div>
+                    <h2>5</h2>
+                    <p>Mentorships</p>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat">
+
+                <div class="stat-icon">
+                    🔄
+                </div>
+
+                <div>
+                    <h2>3</h2>
+                    <p>Borrowed Items</p>
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-stat">
+
+                <div class="stat-icon">
+                    ⭐
+                </div>
+
+                <div>
+                    <h2>86</h2>
+                    <p>Contribution Points</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>What would you like to do today?</p>
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <a href="#" class="action-card">
+
+                    <div class="action-icon">
+                        📤
+                    </div>
+
+                    <div>
+                        <h3>Share Resource</h3>
+                        <p>Upload notes, books or PYQs</p>
+                    </div>
+
+                    <span class="action-arrow">→</span>
+
+                </a>
+
+
+                <a href="#" class="action-card">
+
+                    <div class="action-icon">
+                        🔍
+                    </div>
+
+                    <div>
+                        <h3>Find Resources</h3>
+                        <p>Search study material</p>
+                    </div>
+
+                    <span class="action-arrow">→</span>
+
+                </a>
+
+
+                <a href="#" class="action-card">
+
+                    <div class="action-icon">
+                        🤝
+                    </div>
+
+                    <div>
+                        <h3>Find a Mentor</h3>
+                        <p>Connect with seniors</p>
+                    </div>
+
+                    <span class="action-arrow">→</span>
+
+                </a>
+
+
+                <a href="#" class="action-card">
+
+                    <div class="action-icon">
+                        🔄
+                    </div>
+
+                    <div>
+                        <h3>Borrow an Item</h3>
+                        <p>Find items shared by students</p>
+                    </div>
+
+                    <span class="action-arrow">→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TWO COLUMN AREA ================= -->
+
+        <div class="dashboard-columns">
+
+
+            <!-- Recent Resources -->
+
+            <section class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Recent Resources</h2>
+                        <p>Recently shared by students</p>
+                    </div>
+
+                    <a href="#">View All →</a>
+
+                </div>
+
+
+                <div class="resource-list">
+
+
+                    <div class="resource-item">
+
+                        <div class="resource-icon">
+                            📄
+                        </div>
+
+                        <div class="resource-details">
+
+                            <h3>DAA Unit 2 Notes</h3>
+
+                            <p>
+                                Shared by Rahul • CSE 3rd Year
+                            </p>
+
+                        </div>
+
+                        <span class="resource-type">
+                            Notes
+                        </span>
+
+                    </div>
+
+
+                    <div class="resource-item">
+
+                        <div class="resource-icon">
+                            📘
+                        </div>
+
+                        <div class="resource-details">
+
+                            <h3>DBMS Previous Year Questions</h3>
+
+                            <p>
+                                Shared by Ananya • CST 4th Year
+                            </p>
+
+                        </div>
+
+                        <span class="resource-type">
+                            PYQ
+                        </span>
+
+                    </div>
+
+
+                    <div class="resource-item">
+
+                        <div class="resource-icon">
+                            📚
+                        </div>
+
+                        <div class="resource-details">
+
+                            <h3>Python Programming Book</h3>
+
+                            <p>
+                                Shared by Arjun • CSD 2nd Year
+                            </p>
+
+                        </div>
+
+                        <span class="resource-type">
+                            Book
+                        </span>
+
+                    </div>
+
+
+                    <div class="resource-item">
+
+                        <div class="resource-icon">
+                            📝
+                        </div>
+
+                        <div class="resource-details">
+
+                            <h3>Python Viva Questions</h3>
+
+                            <p>
+                                Shared by Priya • CST 3rd Year
+                            </p>
+
+                        </div>
+
+                        <span class="resource-type">
+                            Viva
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Upcoming Opportunities -->
+
+            <section class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Upcoming Opportunities</h2>
+                        <p>Don't miss these</p>
+                    </div>
+
+                    <a href="#">View All →</a>
+
+                </div>
+
+
+                <div class="opportunity-list">
+
+
+                    <div class="opportunity-item">
+
+                        <div class="opportunity-date">
+                            <strong>15</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div>
+
+                            <h3>Campus Hackathon 2026</h3>
+
+                            <p>
+                                💻 Hackathon • Open for all years
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="opportunity-item">
+
+                        <div class="opportunity-date">
+                            <strong>18</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div>
+
+                            <h3>Web Development Workshop</h3>
+
+                            <p>
+                                🎓 Workshop • CST Department
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="opportunity-item">
+
+                        <div class="opportunity-date">
+                            <strong>22</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div>
+
+                            <h3>Internship Preparation Session</h3>
+
+                            <p>
+                                💼 Career • Senior Mentors
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ================= MENTORSHIP ================= -->
+
+        <section class="dashboard-card mentorship-section">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <h2>Senior Mentors</h2>
+
+                    <p>
+                        Connect with seniors and learn from their experience.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    Explore Mentors →
+                </a>
+
+            </div>
+
+
+            <div class="mentor-grid">
+
+
+                <div class="mentor-card">
+
+                    <div class="mentor-avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <h3>Aditya Sharma</h3>
+
+                        <p>CSE • 4th Year</p>
+
+                        <span>Web Development</span>
+
+                    </div>
+
+                    <button>
+                        Connect
+                    </button>
+
+                </div>
+
+
+                <div class="mentor-card">
+
+                    <div class="mentor-avatar">
+                        S
+                    </div>
+
+                    <div>
+
+                        <h3>Sneha Verma</h3>
+
+                        <p>CST • 4th Year</p>
+
+                        <span>Data Analytics</span>
+
+                    </div>
+
+                    <button>
+                        Connect
+                    </button>
+
+                </div>
+
+
+                <div class="mentor-card">
+
+                    <div class="mentor-avatar">
+                        R
+                    </div>
+
+                    <div>
+
+                        <h3>Rohan Mehta</h3>
+
+                        <p>CSD • 4th Year</p>
+
+                        <span>Competitive Programming</span>
+
+                    </div>
+
+                    <button>
+                        Connect
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ACTIVITY ================= -->
+
+        <section class="dashboard-card activity-section">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <h2>Your Recent Activity</h2>
+
+                    <p>
+                        Keep track of your CampusConnect activity.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    View Activity →
+                </a>
+
+            </div>
+
+
+            <div class="activity-list">
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+                        📤
+                    </div>
+
+                    <div>
+
+                        <h3>You shared DAA Unit 1 Notes</h3>
+
+                        <p>
+                            2 hours ago
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+                        🤝
+                    </div>
+
+                    <div>
+
+                        <h3>You connected with a senior mentor</h3>
+
+                        <p>
+                            Yesterday
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon">
+                        🔄
+                    </div>
+
+                    <div>
+
+                        <h3>You requested a scientific calculator</h3>
+
+                        <p>
+                            2 days ago
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

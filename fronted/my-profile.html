@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my-profile.css">
+</head>
+<body class="my-profile-page">
+
+    <header class="profile-header">
+        <a href="dashboard.html" class="profile-back">← Dashboard</a>
+        <a href="dashboard.html" class="profile-brand">🌿 CampusConnect</a>
+        <a href="notifications.html" class="profile-notifications">♧ Notifications</a>
+    </header>
+
+    <main class="profile-main">
+
+        <section class="profile-welcome">
+            <span class="profile-eyebrow">YOUR CAMPUS IDENTITY</span>
+            <h1>My Profile</h1>
+            <p>Showcase your journey, skills and contributions to the CampusConnect community.</p>
+        </section>
+
+        <section class="profile-card">
+
+            <div class="profile-cover">
+                <span class="cover-label">STUDENT PROFILE</span>
+            </div>
+
+            <div class="profile-overview">
+                <div class="profile-avatar" id="profileAvatar">👩🏻‍🎓</div>
+
+                <div class="profile-heading">
+                    <h2 id="displayName">Your Name</h2>
+                    <p id="displayBranch">B.Tech · Computer Science and Technology</p>
+                    <span class="profile-year" id="displayYear">Year 2 · Student</span>
+                </div>
+
+                <button type="button" class="profile-edit-btn" id="editProfileBtn">
+                    ✎ Edit Profile
+                </button>
+            </div>
+
+            <div class="profile-details">
+                <div class="profile-detail">
+                    <span class="detail-icon">✉</span>
+                    <div>
+                        <span class="detail-label">Email Address</span>
+                        <p id="displayEmail">Add your email address</p>
+                    </div>
+                </div>
+
+                <div class="profile-detail">
+                    <span class="detail-icon">🎓</span>
+                    <div>
+                        <span class="detail-label">Branch</span>
+                        <p id="displayBranchDetail">Computer Science and Technology</p>
+                    </div>
+                </div>
+
+                <div class="profile-detail">
+                    <span class="detail-icon">📅</span>
+                    <div>
+                        <span class="detail-label">Academic Year</span>
+                        <p id="displayYearDetail">Second Year</p>
+                    </div>
+                </div>
+
+                <div class="profile-detail">
+                    <span class="detail-icon">📍</span>
+                    <div>
+                        <span class="detail-label">College</span>
+                        <p>MITS-DU, Gwalior</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-about">
+                <h3>About Me</h3>
+                <p id="displayAbout">Add a short introduction about yourself, your interests and what you are learning.</p>
+            </div>
+
+            <div class="profile-skills">
+                <h3>Skills & Interests</h3>
+                <div class="profile-skill-list" id="displaySkills">
+                    <span>Programming</span>
+                    <span>Learning & Growth</span>
+                    <span>Teamwork</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="profile-activity-grid">
+
+            <article class="profile-activity-card">
+                <div class="activity-heading">
+                    <span class="activity-icon">📚</span>
+                    <h3>My Shared Resources</h3>
+                </div>
+                <p>Keep track of the study materials and useful resources you contribute.</p>
+                <a href="resources.html" class="profile-action-link">Explore Resource Hub →</a>
+            </article>
+
+            <article class="profile-activity-card">
+                <div class="activity-heading">
+                    <span class="activity-icon">💻</span>
+                    <h3>My Projects</h3>
+                </div>
+                <p>Explore student projects and discover ideas to build together.</p>
+                <a href="projects.html" class="profile-action-link">Explore Projects →</a>
+            </article>
+
+            <article class="profile-activity-card">
+                <div class="activity-heading">
+                    <span class="activity-icon">🤝</span>
+                    <h3>Borrow & Lend</h3>
+                </div>
+                <p>Visit the resource-sharing section to discover items available on campus.</p>
+                <a href="borrow.html" class="profile-action-link">Explore Items →</a>
+            </article>
+
+        </section>
+
+        <section class="profile-edit-section" id="profileEditSection" hidden>
+            <div class="profile-form-header">
+                <div>
+                    <span class="profile-eyebrow">KEEP IT UPDATED</span>
+                    <h2>Edit Your Profile</h2>
+                </div>
+                <button type="button" id="closeProfileForm" class="profile-close-btn" aria-label="Close form">✕</button>
+            </div>
+
+            <form id="profileEditForm">
+
+                <div class="profile-form-grid">
+                    <div class="profile-form-field">
+                        <label for="profileName">Full Name</label>
+                        <input type="text" id="profileName" maxlength="80" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="profile-form-field">
+                        <label for="profileEmail">Email Address</label>
+                        <input type="email" id="profileEmail" maxlength="120" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="profile-form-field">
+                        <label for="profileBranch">Branch</label>
+                        <input type="text" id="profileBranch" maxlength="100" placeholder="e.g. CST">
+                    </div>
+
+                    <div class="profile-form-field">
+                        <label for="profileYear">Academic Year</label>
+                        <select id="profileYear">
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                        </select>
+                    </div>
+
+                    <div class="profile-form-field profile-full-width">
+                        <label for="profileAbout">About Me</label>
+                        <textarea id="profileAbout" rows="3" maxlength="500" placeholder="Write a short introduction..."></textarea>
+                    </div>
+
+                    <div class="profile-form-field profile-full-width">
+                        <label for="profileSkills">Skills & Interests</label>
+                        <input type="text" id="profileSkills" maxlength="250" placeholder="Python, Web Development, DSA">
+                        <small>Separate each skill with a comma.</small>
+                    </div>
+                </div>
+
+                <p id="profileFormMessage" class="profile-form-message" role="status"></p>
+
+                <div class="profile-form-actions">
+                    <button type="button" id="cancelProfileEdit" class="profile-cancel-btn">Cancel</button>
+                    <button type="submit" class="profile-save-btn">Save Changes</button>
+                </div>
+
+            </form>
+        </section>
+
+        <footer class="profile-footer">
+            <a href="dashboard.html">← Back to Dashboard</a>
+            <p>CampusConnect · Learn together. Build together.</p>
+        </footer>
+
+    </main>
+
+<script src="profile-notifications.js"></script>
+<script src="my-profile.js"></script>
+</body>
+</html>
